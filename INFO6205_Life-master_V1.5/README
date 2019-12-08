@@ -1,0 +1,14 @@
+* The project present the Convey's Game of life.
+* The problem to solve in this project is to find the most fit individual after mutation that could be alive and grow.
+
+* The executable java class lies in edu.neu.coe.info6205.ui.UIStart. 
+  It would first initialize the User Interface panel, There are two Rule options, Rule 1 and Rule 2. Rule 1 would run the pre-selected most fit individual. Rule 2 would 
+  run the entire selection process and display the most fit individual on the UI panel.
+  
+* When hit the "start" button, the program would using rules in individual.java class to randomly generate 
+  100 grids of original pattern, which is known as genotype in Genetic Algorithm. The program would then run the Game of life on 100 genotypes for 1000 generations.
+  Then mutate the result and calculate the fitness of each grid, which is also known as individual. The program would then choose the highest fitness individual
+  and record it in the log4j.properties.
+* The above process would repeat 10 times and record 10 most fit individual in the log4j.properties. Then the most fit individual with highest 
+  fitness score would be select.
+  
